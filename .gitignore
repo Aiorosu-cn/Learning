@@ -1,0 +1,10 @@
+#忽略所有编译文件
+*.[oa]
+*.pyc
+#忽略日志文件
+*.log
+#忽略codeblock工程文件
+*.rc
+*.cbp
+*.layout
+*.cscops_file_list
