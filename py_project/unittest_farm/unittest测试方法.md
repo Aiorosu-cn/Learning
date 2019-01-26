@@ -27,7 +27,9 @@ if __name__=='__main__'
 ```
 
 # 错误测试
-使用skip()，可以跳过个别的 test methods 或者 整个 classed 。并且可以将执行失败的用例标记为‘预期中的错误’,这样就不会在测试报告中体现这个用例执行失败
+使用skip(),可以跳过个别的测试模块或者整个classed。并且可以将执行失败的用例标记为‘预期中的错误’,这样就不会在TestResult中标记为失败
+
+使用skip() 修饰或者conditional variants可以很轻松跳过测试
 ```python
 class MyTestCase(unittest.TestCase):
 	@unittest.skip("demonstrating skipping")
@@ -35,6 +37,15 @@ class MyTestCase(unittest.TestCase):
 		self.fail("shouldn't happen")
 	
 	@unittest.skipif(mylib.__version__ < (1, 3), "not supported in this lobrary version")
+	
+	def test_format(self):
+        # Tests that work for only a certain version of the library.
+        pass
+
+    @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
+    def test_windows_support(self):
+        # windows specific testing code
+        pass
 	
 	
 
