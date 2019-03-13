@@ -21,6 +21,7 @@ int main(){
 	d_price = a_price * 0.913;
 
 	//display information on screen with cout
+	//下面三步为设置显示小数点后2位
 	cout << fixed;
 	cout.precision(2);
 	cout.setf(ios_base::showpoint);
