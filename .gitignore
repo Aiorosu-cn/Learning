@@ -3,6 +3,7 @@
 *.pyc
 *.out
 *.exe
+*.h.gch
 #忽略日志文件
 *.log
 #忽略codeblock工程文件
