@@ -23,7 +23,7 @@ class Queue
 private:
 	//class scope definitions
 	//Node is a nested structure definition local to this c
-	struct Node{ Item item ; struct Node * next};
+	struct Node{ Item item ; struct Node * next ;};
 	enum{Q_SIZE = 10};
 	//private class members
 	Node * front;

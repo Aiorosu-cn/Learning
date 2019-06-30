@@ -4,10 +4,15 @@
 *.out
 *.exe
 *.h.gch
-#忽略日志文件
+#忽略日志和临时文件
 *.log
+*.swp
 #忽略codeblock工程文件
 *.rc
 *.cbp
 *.layout
 *.cscops_file_list
+
+#忽略各种编辑器的配置文件
+.vscode/
+build/
