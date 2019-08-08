@@ -1,7 +1,7 @@
 class Queue
 {
 private:
-	struct Node{ Item item; struct Node * next;}
+	struct Node{ Item item; struct Node * next;}	//这里只是定义了这个结构，而不是一个成员数据，这称为嵌套结构
 	enum{ Q_SIZE = 10};
 	Node * front ;
 	Node * rear;
