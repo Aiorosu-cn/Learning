@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1573904951 source:/home/aiorosu/workspace/Learning/C++/c++plus_PDF/Brass/main.cpp
+	<iostream>
+
+1573915574 source:/home/aiorosu/workspace/Learning/C++/c++plus_PDF/Brass/usebrass1.cpp
+	<iostream>
+	"brasss.h"
+
+1573916186 /home/aiorosu/workspace/Learning/C++/c++plus_PDF/Brass/brasss.h
+	<iostream>
+
+1574252646 source:/home/aiorosu/workspace/Learning/C++/c++plus_PDF/Brass/brass.cpp
+	<iostream>
+	"brasss.h"
+

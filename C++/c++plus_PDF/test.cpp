@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Queue
 {
 private:
@@ -7,53 +8,61 @@ private:
 	Node * rear;
 	int items;
 	const int qsize;
-public：
+public:
+
 }
 
-Queue::Queue(int qs):qsize(qs)
+class one
 {
-	front = rear = NULL;
-	items = 0;
-	qsize = qs;
-}
+	private:
+		double i;
+	public:
+		one(double n):i(n){};
+		one(){};
+		virtual void show(){cout << i;};
+};
 
-
-class Classy
+class onepluse:public one
 {
-	int mem1 = 10;		//in-class initialization
-	const int mem2 = 20;	//in-class initialization
-}
+	private:
+		double i;
+	public:
+		virtual void show(){cout << i+0.01;};
+		onepluse(double n):i(n){};
+};
 
-Classy::Classy(): mem1(10), mem2(20){}
-
-bool Queue::enqueue(const Item & item)
+int main()
 {
-	if (iffull())
-		return false;
-	Node * add = new Node;	//creat node 
-//on failure, new throws std::bad_alloc exception
-	add->item = item;
-	add->next = NULL;
-	items++;
-	if (front ==NULL)
-		front = add;
-	else
-		rear->next = add;
-	rear = add;
-	return true;
+	one * test[2];
+	double num;
+	int ty;
+	for ( int i = 0 ; i < 2; i++)
+	{
+		cout << " input 1 use class one ,and input 2 use class oneplus! \n" << endl; 
+		cin >>  ty;
+		if ( ty == 1)
+		{
+			cout << "please input number  : ";
+			cin >>  num ;
+			test[i] = &one(num);
+		}
+		else if (ty == 2)
+		{
+			
+			cout << "please input number  : ";
+			cin >>  num ;
+			test[i] = &onepluse(num);
+		}
+	}
+	cout << "\n" << endl;
+	for (int i = 0; i < 2; i++)
+	{
+		test[i]->show();
+	}
 }
 
-bool Queue::dequeue(Item & item)
-{
-	if(front == NULL)
-		return false;
-	item = front->item;
-	items--;
-	Node * temp = front;
-	front = front ->next;
-	delete temp;
-	f(items == 0)
-		rear = NULL;
-	return true;
-}
+
+
+
+
 
