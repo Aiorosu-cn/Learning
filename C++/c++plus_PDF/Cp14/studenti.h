@@ -10,8 +10,9 @@ class Student : private std::string,private std::valarray<double>
 {
     private:
         typedef std::valarray<double> ArrayDb;
-        std:
-        Student() {}
+        std::ostream & arr_out(std::ostream & os) const;
+    public:
+        Student(): std::string("Null Student"), AarrayDb() {}
         virtual ~Student() {}
 
 };
