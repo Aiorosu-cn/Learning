@@ -12,7 +12,6 @@ class Student : private std::string,private std::valarray<double>
         typedef std::valarray<double> ArrayDb;
         std::ostream & arr_out(std::ostream & os) const;
     public:
-
         Student():std::string("Null Student"), ArrayDb() {}
         explicit Student(const std::string & s):std::string (s), ArrayDb(){}
         explicit Student (int n): std::string("Nully"), ArrayDb(n){}
