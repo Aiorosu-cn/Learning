@@ -16,3 +16,9 @@ void Worker::Set()
     while (cin.get() != '\n')
         continue;
 }
+
+void Worker::Show() const
+{
+    cout << "name: " << fullname << "\n";
+    cout << "employee ID: " << id "\n";
+}
