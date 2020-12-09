@@ -30,7 +30,7 @@ public:
     void settings() const ; //display all settings
 };
 
-class Remote    //有元类，可以直接访问TV，为什么不是继承？继承你创建一个遥控器就要创建一个TV类，而遥控器并不一定只控制TV，在方法上输入输出并不是继承关系，
+class Remote    //友元类，可以直接访问TV，为什么不是继承？继承你创建一个遥控器就要创建一个TV类，而遥控器并不一定只控制TV，在方法上输入输出并不是继承关系，
 {private:
     int mode;      //控制TV还是DVD
 public:
