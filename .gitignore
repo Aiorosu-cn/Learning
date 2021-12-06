@@ -19,3 +19,12 @@ auto*
 #忽略各种编辑器的配置文件
 .vscode/
 build/
+
+# 忽略所有文件
+*
+# 不忽略目录
+！*/
+# 不忽略文件。个itignore和 *.cpp 和*.h
+!.gitignore
+!*.cpp
+!*.h
