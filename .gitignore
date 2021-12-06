@@ -1,30 +1,14 @@
-#忽略所有编译文件
-*.[oa]
-*.pyc
-*.out
-*.exe
-*.h.gch
-#忽略日志和临时文件
-*.log
-*.swp
-#忽略codeblock工程文件
-*.rc
-*.cbp
-*.layout
-*.cscops_file_list
-auto*
-*.o
-
-
-#忽略各种编辑器的配置文件
-.vscode/
-build/
-
 # 忽略所有文件
 *
 # 不忽略目录
 ！*/
-# 不忽略文件。个itignore和 *.cpp 和*.h
+# 不忽略文件.gitignore和 *.cpp 和*.h
 !.gitignore
 !*.cpp
 !*.h
+#不忽略py文件
+!*.py
+#不忽略资源文件
+!*.txt
+!*.csv
+!*.md
