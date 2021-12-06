@@ -2,10 +2,11 @@
 *
 # 不忽略目录
 ！*/
-# 不忽略文件.gitignore和 *.cpp 和*.h
+# 不忽略文件.gitignore,.git和 *.cpp 和*.h
 !.gitignore
 !*.cpp
 !*.h
+!*.git
 #不忽略py文件
 !*.py
 #不忽略资源文件
