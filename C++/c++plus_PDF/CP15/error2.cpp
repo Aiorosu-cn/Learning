@@ -8,7 +8,7 @@ int main()
 {
     double x, y, z;
 
-    std::cout << "Enter two number";
+    std::cout << "Enter two number:";
     while (std::cin>> x >> y)
     {
         if (hmean(x,y,&z))
