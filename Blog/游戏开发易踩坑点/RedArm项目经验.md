@@ -276,3 +276,15 @@ AIC有位置，他会自动生成在AI_NPC一开始的位置，在AIC中使用�
 - 排查是transform属性不完整，无法设置位置和面向
 -  要同时设置根节点和父节点，有了相对关系，才有相对位置
 
+# C++创建pawn，skeletal mesh导入相对位置异常
+
+- 添加一个static mesh 对比
+  - 当static mesh 没有设置父节点时，和骨骼组件一样位置有问题；
+  - 当static mesh 设置父节点后，没有问题；
+- 总结：设置父节点解决
+
+
+
+# 导入model时，不是整体
+
+在导入时，在mesh下，选**`合并网格体（combine meshes）`**
